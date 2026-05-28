@@ -1,0 +1,23 @@
+@media (min-width: 920px) {
+  .control-panel {
+    width: 430px;
+    right: 16px;
+    left: auto;
+  }
+
+  .top-bar {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .panel-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .chip {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+}
