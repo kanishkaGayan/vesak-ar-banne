@@ -17,6 +17,10 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-app.listen(PORT, () => {
-  console.log(`🪷 Vesak AR app running on http://localhost:${PORT}`);
-});
+if (process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`Vesak AR app running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;

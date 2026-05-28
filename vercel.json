@@ -1,11 +1,11 @@
 {
-  "buildCommand": "npm install",
   "version": 2,
-  "functions": {
-    "server.js": {
-      "runtime": "nodejs@18.x"
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
