@@ -1,0 +1,16 @@
+{
+  "name": "vesak-ar-banner",
+  "version": "1.0.0",
+  "description": "AR Vesak banner web app",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "start": "node server.js"
+  },
+  "keywords": ["ar", "vesak", "augmented-reality"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
